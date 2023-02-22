@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Agency</title>
+    <link rel="stylesheet" href="./utils.css"/>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./breakpoints.css"/>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/a8d93ac412.js" crossorigin="anonymous"></script> -->
+    
+    <!--google fonnts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Rubik font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <header class="header background-img">
+        <nav class="nav">
+            <div class="desktop-nav-wrap container">
+                <div class="logo">
+                    <h1 class="logo-text">Logo</h1>
+                </div>
+                
+                <!-- this goes off on small devices -->
+                <section class="desktop-navs">
+                    <ul class="desktop-nav-lists">
+                        <li>Reviews</li>
+                        <li>Coverage Area</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+
+                <!-- this goes off on large devices -->
+                <!-- <button mobile-nav-icon class="mobile-nav-icon">Icon</button> -->
+                <i mobile-nav-icon id="mobile-nav-icon" class="bx bx-menu bx-md"></i>
+            </div>
+        </nav>
+
+        <div mobile-nav class="mobile-nav mobile-drawer-close">
+            <ul class="mobile-nav-list">
+                <li>Reviews</li>
+                <li>Coverage Area</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+            <div mobile-nav-empty class="mobile-nav-empty"></div>
+        </div>
+
+        <div class="hero container">
+            <div class="hero-wrap">
+                <h1 class="hero-text">Traveling Around The World Without Any Frustration & Painless</h1>
+            
+                <p class="hero-sub-text">Feeling stressed when you going th travel? Yeah, sometimes i feel like that too. I know that is bad things, but hey, that things is always going to happen to us when we traveling, except for us bro.</p>
+
+                <button class="hero-btn btn">Set The Date</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="places container">
+            <section class="place">
+                <img class="place-img" src="./images/indonesia.jpg"/>
+                <article class="place-texts">
+                    <h3 class="place-title">Indonesia</h3>
+                    <p class="place-price">$5.561/PAX</p>
+                    <p class="place-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam</p>
+                </article>
+            </section>
+
+            <section class="place">
+                <img class="place-img" src="./images/ghana.jpg"/>
+                <article class="place-texts">
+                    <h3 class="place-title">Ghana</h3>
+                    <p class="place-price">$5.561/PAX</p>
+                    <p class="place-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam</p>
+                </article>
+            </section>
+
+            <section class="place">
+                <img class="place-img" src="./images/paris.jpg"/>
+                <article class="place-texts">
+                    <h3 class="place-title">Paris</h3>
+                    <p class="place-price">$5.561/PAX</p>
+                    <p class="place-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam</p>
+                </article>
+            </section>
+        </div>
+
+        <div class="destinations container">
+            <section class="destinations-left">
+                <article class="d-l-article">
+                    <h2 class="d-l-a-title">Best 3 Yearly Popular Destinations</h2>
+                    <p class="d-l-a-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, unde vero illo, perspiciatis doloremque adipisci veritatis consequuntur nihil culpa fugit quidem nobis, </p>
+                </article>
+                
+                <div class="d-l-a-destination background-img">
+                    <!-- below uses the styles found under destinations-right -->
+                    <div class="d-r-texts">
+                        <h4 class="d-r-t-title">Malaysia</h4>
+                        <p class="d-r-t-text">$417/PERSON</p>
+                    </div>
+                </div>
+               
+            </section>
+
+            <section class="destinations-right">
+                <div class="d-right d-right-one background-img">
+                    <div class="d-r-texts">
+                        <h4 class="d-r-t-title">Singapore</h4>
+                        <p class="d-r-t-text">$417/PERSON</p>
+                    </div>
+                </div>
+
+                <div class="d-right d-right-two background-img">
+                    <div class="d-r-texts">
+                        <h4 class="d-r-t-title">Malaysia</h4>
+                        <p class="d-r-t-text">$417/PERSON</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="about-us container">
+            <h2 class="about-us-title">Sneak Peak About</h2>
+            <h2 class="about-us-title">Who We Are</h2>
+            <hr class="a-b-underline"/>
+            <div class="a-u-texts">
+                <h3 class="a-u-texts-main">Start in 2003, TVA is Indonesia independent leading travel agencies with various awards</h3>
+
+                <section class="a-u-texts-subs">
+                    <p class="a-u-t-s-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero harum velit illo sequi voluptates cumque debitis</p>
+
+                    <p class="a-u-t-s-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero harum velit illo sequi voluptates cumque debitis</p>
+                </section>
+            </div>
+
+            <div class="about-us-team">
+                <div class="about-us-team-wrap">
+
+                    <div class="a-u-t-person">
+                        <img src="./images/person.jpeg" class="a-u-t-p-img"/>
+                        <div class="a-u-t-p-texts">
+                            <p class="a-u-t-p-t-name">Nikita Prawita</p>
+                            <p class="a-u-t-p-t-role">Photographer</p>
+                        </div>
+                    </div>
+    
+                    <div class="a-u-t-person">
+                        <img src="./images/person2.jpeg" class="a-u-t-p-img"/>
+                        <div class="a-u-t-p-texts">
+                            <p class="a-u-t-p-t-name">Bruce Wayne</p>
+                            <p class="a-u-t-p-t-role">CEO & Founder</p>
+                        </div>
+                    </div>
+    
+                    <div class="a-u-t-person">
+                        <img src="./images/person3.jpeg" class="a-u-t-p-img"/>
+                        <div class="a-u-t-p-texts">
+                            <p class="a-u-t-p-t-name">Natasha Romanoff</p>
+                            <p class="a-u-t-p-t-role">Sr Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a-u-t-underline"></div>
+
+                <h3 class="a-u-t-text">Thats the core team</h3>
+                <h3 class="a-u-t-text">of many members</h3>
+                
+            </div>
+            
+            <div class="agency">
+                <div class="a-image-wrap">
+                    <img src="./images/ancient-building.jpg" class="a-image"/>
+                </div>
+
+                <div class="a-texts">
+                    <h2 class="a-t-main">We are not just any ordinary traveling agency</h2>
+                    <div class="a-t-m-underline"></div>
+                    <p class="a-t-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error laboriosam ea eligendi ipsa, at porro, velit odio sequi exercitationem.
+                    </p>
+                    <button class="btn a-t-btn">
+                        Set a data
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <div class="f-main">
+            <h4 class="f-title">TVA Travel.</h4>
+            <p class="f-text">Concert with amazing and wonderful Dj around the world</p>
+            <div class="f-m-socials">
+                <i class='bx bxl-google bx-sm'></i>
+                <i class='bx bxl-youtube bx-sm'></i>
+                <i class='bx bxl-twitter bx-sm'></i>
+                <i class='bx bxl-instagram bx-sm'></i>
+                <i class='bx bxl-linkedin-square bx-sm'></i>
+            </div>
+        </div>
+
+        <div class="f-services">
+            <section class="f-s-wrap">
+                <h4 class="f-title">Community</h4>
+
+                <div class="f-s-w-details">
+                    <p>For Artist</p>
+                    <p>Developers</p>
+                    <p>Advertising</p>
+                    <p>Vendor</p>
+                </div>
+            </section>
+
+            <section class="f-s-wrap">
+                <h4 class="f-title">Services</h4>
+
+                <div class="f-s-w-details">
+                    <p>iConcert Music</p>
+                    <p>Digital Download</p>
+                    <p>Custom Merch</p>
+                    <p>eTicketing</p>
+                </div>
+            </section>
+
+            <section class="f-s-wrap">
+                <h4 class="f-title">Company</h4>
+
+                <div class="f-s-w-details">
+                    <p>About Concert</p>
+                    <p>Company News</p>
+                    <p>Investors</p>
+                    <p>Careers</p>
+                </div>
+            </section>
+
+            <section class="f-s-wrap">
+                <h4 class="f-title">More</h4>
+
+                <div class="f-s-w-details">
+                    <p>Security</p>
+                    <p>Accessibility</p>
+                    <p>Changelog</p>
+                </div>
+            </section>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

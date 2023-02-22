@@ -1,0 +1,75 @@
+@media screen and (max-width: 900px){
+    .hero-wrap{width: 100%;}
+    .hero-sub-text{width:100%}
+    .a-u-t-person{width: 30%;}
+
+    .footer{flex-direction: column; gap: 50px;}
+}
+
+@media screen and (max-width:768px){
+    .desktop-navs{display: none;}
+    #mobile-nav-icon{display: block; color: white; cursor: pointer;}
+
+    .mobile-nav{
+        position: fixed;
+        top:0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+    
+    .mobile-drawer-open{display: flex;}
+    .mobile-drawer-close{display: none;}
+
+
+    .mobile-nav-list{
+        background-color: var(--black-3);
+        width: 80%;
+        padding: 20px;
+        list-style: none;
+    }
+    
+    .mobile-nav-list > li{
+        color: var(--semi-white);
+        font-size: var(--semi-large-text);
+        margin: 30px 0;
+        font-family: var(--title-family);
+    }
+    
+    .mobile-nav-empty{
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0.425);
+        cursor: pointer;
+    }
+
+    .places{flex-direction: column}
+    .place{width: 100%;}
+
+    .destinations{flex-direction: column; gap: 100px;}
+    .destinations-left, .destinations-right{width: 100%;}
+
+    .a-u-texts{flex-direction: column; gap: 30px;}
+    .a-u-texts-main,.a-u-texts-subs{width: 100%;}
+
+    .agency{flex-direction: column;}
+    .a-image-wrap{width: 100%;}
+    .a-texts{width: 100%;}
+}
+
+@media screen and (max-width:600px){
+    .about-us-team-wrap{flex-direction: column;}
+    .a-u-t-person{width: 100%;}
+    .a-u-t-p-img{height: 240px;}
+
+    .f-main{width: 100%;}
+    .f-services{width: 100%; flex-direction: column;}
+    .f-s-wrap{width: 100%}
+}
+
+
+@media screen and (max-width:400px){
+    .place{flex-direction: column;}
+    .place-img{width: 100%;}
+
+    .a-u-texts-subs{flex-direction: column;}
+}

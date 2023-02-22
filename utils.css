@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+    --semi-white: rgb(240, 240, 240);
+    --semi-white-2: #ddd;
+    --black:rgb(61,61,61);
+    --black-2:rgba(51, 51, 51, 0.527);
+    --black-3:rgb(22, 22, 22);
+
+    /* text sizes */
+
+    --large-text: 2.6rem;
+    --semi-large-text: 1.6rem;
+    --normal-text: 1rem;
+    --small-text: .9rem;
+    --tiny-text:.8rem;
+
+    /* font family */
+    --title-family: 'Poppins', sans-serif;
+    --body-family: 'Rubik', sans-serif;
+
+    /* font weight */
+    --x-bold: 700;
+    --bold: 600;
+    --semi-bold: 500;
+    --normal:400;
+    --light: 300;
+
+    --margin: 2rem;
+    --margin-2: 3.4rem
+}
+
+body{
+    width: 100vw;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--normal-text);
+    font-family: var(--body-family);
+    color: var(--black);
+    background-color: var(--semi-white);
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    all: unset;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+.background-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:768px){
+    :root{
+        --large-text: 2.1rem;
+        --semi-large-text: 1.1rem;
+        --normal-text: .9rem;
+        --small-text: .8rem;
+        --tiny-text:.7rem;
+    }
+}
