@@ -86,6 +86,9 @@
     background-color: #fff;
     display: flex;
     justify-content: center;
+    /* below would be animated to 1 each in js */
+    opacity:0;
+    transform: scale(.2);
 }
 
 .place-img{
@@ -249,6 +252,9 @@
     background-color: antiquewhite;
     background-color: var(--semi-white);
     padding: 10px;
+    /* below would be animated to 1 and 0 respectively in js */
+    opacity: 0;
+    transform: translateX(50px);
 }
 
 .a-u-t-p-img{
