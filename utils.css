@@ -57,8 +57,15 @@ body{
     padding: 20px 40px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* font-family: 'Rubik', sans-serif; */
+}
+
+.btn-text{
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
 }
 
 .background-img{

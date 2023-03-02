@@ -17,7 +17,7 @@
 .logo-text{
     font-weight: var(--x-bold);
     color: var(--semi-white-2);
-    font-size: var(--semi-large-text);
+    font-size: var(--large-text);
 }
 
 .desktop-navs{
@@ -169,6 +169,8 @@
 .d-right{
     position: relative;
     height: 50%;
+    opacity:0;
+    transform: translateY(170px);
 }
 
 .d-right-one{background-image: linear-gradient(135deg, rgba(15, 15, 15, 0.24), rgba(15, 15, 15, 0.24)), url('./images/singapore2.jpg');}
@@ -252,9 +254,6 @@
     background-color: antiquewhite;
     background-color: var(--semi-white);
     padding: 10px;
-    /* below would be animated to 1 and 0 respectively in js */
-    opacity: 0;
-    transform: translateX(50px);
 }
 
 .a-u-t-p-img{
@@ -318,7 +317,10 @@
 
 .a-t-main{
     font-size: var(--semi-large-text);
-    
+
+    /* animate with js to 1 and 0 respectively */
+    opacity:0;
+    transform: translateY(20px)
 }
 
 .a-t-m-underline{
@@ -330,6 +332,10 @@
 
 .a-t-text{
     line-height: 1.6;
+
+    /* animate with js to 1 and 0 respectively */
+    opacity: 0;
+    transform: translateY(-20px)
 }
 
 .a-t-btn{
